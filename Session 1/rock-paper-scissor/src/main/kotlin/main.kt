@@ -1,11 +1,15 @@
 import kotlin.random.Random
+
 var yourPoints = 0
 var pcPoints = 0
+val options = arrayOf("rock", "paper", "scissors", "lizard", "spock")
+var input: String? = null
+
 
 fun main() {
-
-    play()
+    getInput()
 }
+
 fun winOrLose(value: Boolean) {
     if (value) {
         println("You win !")
@@ -16,18 +20,48 @@ fun winOrLose(value: Boolean) {
     }
 }
 
-fun play() {
-    val options = arrayOf("rock", "paper", "scissors", "lizard", "spock")
-    //choosing random value from array
-    val pc = options[Random.nextInt(0, 2)]
-
+fun getInput() {
     //asking input to user
     println("Choose rock, paper, scissors, lizard or spock:")
-    val input = readLine()
+    input = readLine()
+    for(option in options){
+        if(input == option){
+            play()
+        }else{
+            println("You did not choose any of the rock, paper, scissors, lizard, spock options. Try again !")
+        }
+    }
 
-    //showing the values
-    println("You chose $input and they chose $pc")
+}
 
+fun playAgain(){
+    println("Want to try again?")
+
+    var tryAgain = readLine()
+
+    when (tryAgain) {
+        "yes" -> {
+            play()
+        }
+
+        "no" -> {
+            println("Thank you for playing with me :)")
+        }
+        else -> {
+            println("Answer yes or no, please")
+        }
+    }
+}
+
+fun play() {
+    //choosing random value from array
+    val pc = options.random()
+
+
+    if (pc == input) {
+        println("Try again")
+        play()
+    }
     //checking values
     when (input + pc) {
         //paper
@@ -40,10 +74,7 @@ fun play() {
             winOrLose(true)
 
         }
-        "paper" + "paper" -> {
-            println("Try again")
-            play()
-        }
+
         "paper" + "spock" -> {
             println("You win !")
             winOrLose(true)
@@ -66,10 +97,7 @@ fun play() {
             winOrLose(false)
 
         }
-        "scissors" + "scissors" -> {
-            println("Try again")
-            play()
-        }
+
         "scissors" + "spock" -> {
             println("You lose !")
             winOrLose(false)
@@ -88,10 +116,7 @@ fun play() {
             winOrLose(true)
 
         }
-        "rock" + "rock" -> {
-            println("Try again")
-            play()
-        }
+
         "rock" + "paper" -> {
             println("You lose !")
             winOrLose(false)
@@ -124,10 +149,7 @@ fun play() {
             winOrLose(false)
 
         }
-        "spock" + "spock" -> {
-            println("Try again")
-            play()
-        }
+
         "spock" + "lizard" -> {
             println("You lose !")
             winOrLose(false)
@@ -155,11 +177,6 @@ fun play() {
             winOrLose(true)
 
         }
-        "lizard" + "lizard" -> {
-            println("Try again")
-            play()
-        }
-
 
         else -> {
             println("You did not choose any of the rock, paper, scissors, lizard, spock options. Try again !")
@@ -168,20 +185,5 @@ fun play() {
 
     }
 
-    println("Want to try again?")
-
-    var tryAgain = readLine()
-
-    when (tryAgain) {
-        "yes" -> {
-            play()
-        }
-
-        "no" -> {
-            println("Thank you for playing with me :)")
-        }
-        else -> {
-            println("Answer yes or no, please")
-        }
-    }
+    playAgain()
 }
