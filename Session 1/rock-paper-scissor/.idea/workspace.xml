@@ -6,20 +6,14 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d086d8eb-0e25-4003-9e66-1627b119b2ee" name="Default Changelist" comment="" />
+    <list default="true" id="2fff1acb-c412-493f-bcf6-4d2d4f5c87be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-world/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hello-world/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,23 +42,18 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1z4yzCy4s5CggKKFpJ8Ut5rdIyy" />
+  <component name="ProjectId" id="1z50wbwDe7aljEvLA1TcB2lsQFm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="hello-world" />
+      <module name="rock-papr-scissor" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -85,11 +74,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d086d8eb-0e25-4003-9e66-1627b119b2ee" name="Default Changelist" comment="" />
-      <created>1633421928062</created>
+      <changelist id="2fff1acb-c412-493f-bcf6-4d2d4f5c87be" name="Default Changelist" comment="" />
+      <created>1633422880674</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633421928062</updated>
+      <updated>1633422880674</updated>
     </task>
     <servers />
   </component>
@@ -103,28 +92,23 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1218" height="293" key="GridCell.Tab.0.bottom" timestamp="1633422517469">
+    <state width="1218" height="388" key="GridCell.Tab.0.bottom" timestamp="1633426793442">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="293" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1633422517469" />
-    <state width="1218" height="293" key="GridCell.Tab.0.center" timestamp="1633422517469">
+    <state width="1218" height="388" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1633426793442" />
+    <state width="1218" height="388" key="GridCell.Tab.0.center" timestamp="1633426793440">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="293" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1633422517469" />
-    <state width="1218" height="293" key="GridCell.Tab.0.left" timestamp="1633422517468">
+    <state width="1218" height="388" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1633426793440" />
+    <state width="1218" height="388" key="GridCell.Tab.0.left" timestamp="1633426793439">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="293" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1633422517468" />
-    <state width="1218" height="293" key="GridCell.Tab.0.right" timestamp="1633422517469">
+    <state width="1218" height="388" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1633426793439" />
+    <state width="1218" height="388" key="GridCell.Tab.0.right" timestamp="1633426793441">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="293" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1633422517469" />
-    <state x="136" y="25" key="SettingsEditor" timestamp="1633422667706">
-      <screen x="0" y="25" width="1280" height="775" />
-    </state>
-    <state x="136" y="25" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1633422667706" />
+    <state width="1218" height="388" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1633426793441" />
   </component>
 </project>
