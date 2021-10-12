@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e40946-f97f-4851-8f39-b63f90ff37c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventuregame/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventuregame/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,35 +67,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1634032875343">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1634035055064">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1634032875343" />
-    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1634032875342">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1634035055064" />
+    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1634035055063">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1634032875342" />
-    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1634032875342">
+    <state width="1218" height="184" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1634035055063" />
+    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1634035055062">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1634032875342" />
-    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1634032875343">
+    <state width="1218" height="184" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1634035055062" />
+    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1634035055063">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1634032875343" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/main.kt</url>
-          <line>93</line>
-          <properties method="gameOver">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1218" height="184" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1634035055063" />
   </component>
 </project>

@@ -4,10 +4,10 @@ var tryCount = 1
 var challenge = 1
 fun main() {
     println("You are in a post apocalyptic world where machines roam the lands and some of them are corrupted by a certain cult. You're an outcast of your tribe because you've been born without parents and someone of the tribe chose to raise you instead. You're a very curious person who likes to learn more about the machines and their history.")
-    println("You see an ancient door with 4 round slots.")
+    println("You entered a ruin and now you see an ancient door with 4 round slots.")
     challengeOne()
 }
-
+//challenge 1
 fun challengeOne() {
     challenge = 1
     val numbers = listOf("VI", "II", "V", "I")
@@ -27,6 +27,7 @@ fun challengeOne() {
     }
 }
 
+//challenge 2
 fun challengeTwo() {
     challenge = 2
     //println("Congratulations you found the answer on try n° ${tryCount}!")
@@ -53,6 +54,7 @@ fun rollDice(guess: Int) {
 
 }
 
+//challenge 3
 fun challengeThree() {
     println("You have a watcher in front of you. You're hiding in high grass but you have to eliminate the watcher in a silent way.")
     println("You can either choose to eliminate it by shooting an arrow in it's eye.")
@@ -72,7 +74,7 @@ fun challengeThree() {
         hitOrNot()
     } else {
         println("You succesfully took down the watcher without being seen by other machines")
-        success()
+        challengeFour()
     }
 }
 
@@ -88,7 +90,18 @@ fun hitOrNot() {
     }
 }
 
+//challenge 4
+fun challengeFour(){
+    //intro
 
+    //guess number 1-100
+
+    //higher or lower
+
+    //succes => next challenge
+}
+
+//success and game-over functions for all the challenges
 fun success() {
     println("Congratulations you won the game!")
 }
