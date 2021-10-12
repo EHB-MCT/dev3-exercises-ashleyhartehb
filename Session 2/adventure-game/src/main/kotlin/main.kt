@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 var tryCount = 1
 var challenge = 1
 fun main() {
@@ -41,7 +43,7 @@ fun rollDice(guess: Int) {
 
     if (listOfValues.contains(guess)) {
         if (guess == randomvalue) {
-            success()
+            challengeThree()
         } else {
             gameOver()
         }
@@ -51,33 +53,74 @@ fun rollDice(guess: Int) {
 
 }
 
+fun challengeThree() {
+    println("You have a watcher in front of you. You're hiding in high grass but you have to eliminate the watcher in a silent way.")
+    println("You can either choose to eliminate it by shooting an arrow in it's eye.")
+    println("OR")
+    println("You can wait for it to walk near you so you can eliminate it with your sharp staff.")
+
+    var weapons = listOf("bow", "staff")
+
+    println("Which one do you choose? Bow or staff ?")
+    val weaponchoice = readLine()
+
+    while (!weapons.contains(weaponchoice)) {
+        println("Which one do you choose? Bow or staff ?")
+        val weaponchoice = readLine()
+    }
+    if (weaponchoice == weapons[0]) {
+        hitOrNot()
+    } else {
+        println("You succesfully took down the watcher without being seen by other machines")
+        success()
+    }
+}
+
+fun hitOrNot() {
+    var wind = Random.nextBoolean()
+    if (wind) {
+        println("Ouch, you missed your target because of the wind")
+        gameOver()
+
+    } else {
+        println("You succesfully took down the watcher without being seen by other machines")
+        success()
+    }
+}
+
+
 fun success() {
     println("Congratulations you won the game!")
 }
 
 fun gameOver() {
-    println("Wrong answer")
+    println("Game over")
 
     val hint1 = "Your device shows the following numbers: I V II VI "
     val hint2 = "It looks like the pannel has been turned downwards"
 
-    if (challenge == 1) {
-        tryCount++
-        when (tryCount) {
-            2 -> println(hint1)
-            3 -> println(hint2)
-            else -> {
-                println("This is the last hint")
-                println(hint1)
-                println(hint2)
+    when (challenge) {
+        1 -> {
+            tryCount++
+            when (tryCount) {
+                2 -> println(hint1)
+                3 -> println(hint2)
+                else -> {
+                    println("This is the last hint")
+                    println(hint1)
+                    println(hint2)
+                }
             }
+            challengeOne()
         }
-        challengeOne()
 
-    } else if (challenge == 2) {
-        challengeTwo()
-    } else {
-        println("No challenges anymore")
+        2 -> {
+            challengeTwo()
+        }
+
+        else -> {
+            println("No challenges anymore")
+        }
     }
 
 }
